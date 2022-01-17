@@ -58,9 +58,7 @@ public class CalculateController {
         if (num == null || num2 == null) {
             return mistake();
         }
-        if (num ==0 || num2 ==0) {
-            return "Делить на 0 нельзя!!";
-        }
+
         int result =calculateService.divide(num,num2);
         return num+"/"+ num2 + "=" + result;
     }
